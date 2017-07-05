@@ -1,0 +1,28 @@
+{% extends "index.html" %}
+{% block title %}Journal{% endblock %}
+
+{% block head %}
+     {{ super() }}
+   <style type="text/css">
+    .important { color: #336699; }
+  </style>
+{% endblock %}	
+
+{% block content %}
+<br></br>
+  <button type="button" class="btn btn-primary" aria-label="Left Align" >
+          <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>Journals
+        </button>
+        <br></br>
+  <p class="important">
+    My first Pycon conference Pycon Bratislava 2017
+
+<div class="journal">
+   <p> I am a kind of person when he likes something [for example a technology] likes to go deep and understand the inner workings of the technology and also likes to meet with the people who
+   are behind the scence [if this was a movie we can say i would like to meet the director, producer and script writer....].</p>
+   <p> So it was in that sense of purpose i was preparing to paricipate in my first ever Pycon conference which was hosted in Central European city of Bratislava.If anyone out there who is reading this journal and does not know what is Pycon , Pycon is a conference or gathering of Pythonistas and open source lovers as well as clever firms [ if someone does not know what is a pythonista , a pythonista is a person who is a  programmer or hacker who is really loyal fan of  Python-the-programming-language.]. </p>
+   <p> But before I write about my personal experience about Pycon let me traceback how i started with programming in Python which is nearly one year exactly.
+   I always like the idea of coding/hacking things and computer programmes only due to the fact that they looked "hip" to me. After University i parted way with programming and went on to become a Network Engineer where i did my fair share of configuring, installing and testing of routers and other network equipments. In the whole process of this "sexy" networking business i found myself the same repetitve tasks over and over for many times.
+   Collect config data --> configure network---> installation--->testing--->Collect config data ... you get my point :)
+
+{ % endblock %}

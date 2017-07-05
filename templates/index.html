@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        {% block head %}
+    <meta charset="utf-8">
+    <title>  {% block title %}
+    BinaryExistence a place for Python Programming Blogs,Journals & Tutorials
+        {% endblock %} 
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}"> 
+    <img style="max-width:100px; box-shadow: 10px 10px   #aaa19f ;" src="{{ url_for('static', filename='img/logo.png') }}"> 
+   <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/main.css') }}" rel="stylesheet">
+        {% endblock %}
+</head>
+ 
+
+<body>{% block content%}
+    <h3> BinaryExistence== Python Coding,Journals, & Discussion Points...</h3>
+    <a href="/journal/"><button type="button" class="btn btn-primary" aria-label="Left Align" style="margin-top: 5px; margin-bottom: 5px; height: 44px; margin-right: 15px">
+          <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>Journals
+        </button></a>
+
+    <a href="/tutorial/"><button type="button" class="btn btn-primary" aria-label="Left Align" style="margin-top: 5px; margin-bottom: 5px; height: 44px; margin-right: 15px">
+          <span class="glyphicon glyphicon-th" aria-hidden="true"></span>Coding
+        </button></a>
+
+    <a href="/discussion_points/"><button type="button" class="btn btn-primary" aria-label="Left Align" style="margin-top: 5px; margin-bottom: 5px; height: 44px; margin-right: 15px">
+          <span class=" glyphicon glyphicon-flash" aria-hidden="true"></span>Discussion Points
+        </button></a>
+
+<div class="container" align="left">
+            <embed type="image/svg+xml" src={{graph_data|safe}} style='max-width:1000px'/>
+      </div>
+    <footer>      {% block footer %}
+
+          {% endblock %}
+    </footer>
+{% endblock %}
+</body>
+
+</html>
