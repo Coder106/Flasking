@@ -1,3 +1,5 @@
+# this code is not completed yet so please check it with easy eye :)
+
 from flask import Flask, render_template
 import pygal
 from pygal.style import DarkColorizedStyle
