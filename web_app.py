@@ -11,9 +11,8 @@ import json
 app = Flask(__name__)
 
 
- 
 # defining varilable which is equivalent to API address
-url = 'http://api.openweathermap.org/data/2.5/forecast?q=Bratislava,sk&APPID=da7ef3742e9243a184bbea82fc508775&mode=json&units=metric'
+url = 'here is the API address not here due to SECURITY'
 
 # downloading the data from url and reading
 raw_data = urllib.urlopen(url)
@@ -83,17 +82,6 @@ def pygalexample():
 	
 	graph_data = graph.render_data_uri()
 	return render_template("index.html", graph_data = graph_data)
-
-
-
-
-
-
-
-
-
-
-
 
 
 # @app.route('/')
