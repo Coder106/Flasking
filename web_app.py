@@ -1,11 +1,11 @@
-# this code is not completed yet so please check it with easy eye :)
+''' Flask application which tries to show the current and upcoming weather condition for city of Bratislava
+this code is not completed yet so please check it with easy eye :) '''
 
 from flask import Flask, render_template
 import pygal
 from pygal.style import DarkColorizedStyle
 import urllib
 import json
-
 
 
 app = Flask(__name__)
